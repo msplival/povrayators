@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+	<title>Povrayators</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+All on povray3.7 on Ubuntu 14.04 with linux3.13 (except where noted)
+
+If you want to provide results, install povray on your machine and run these commands:
+<pre>
+povray --benchmark
+grep model /proc/cpuinfo | tail -1 && uname -a && lsb_release -a
+</pre>
+Then, copy the terminal output of all of those commands, and paste it <a href="http://jebo.me/pas">here</a>.
+Also, find me on #ubuntu-hr on irc.freenode.net, nickname is Mmike. Point me to your paste, and I'll update the list. 
+
+<hr>
+
+<pre>
+Intel Xeon Gold 5218R		[hbogner]          2.10  2x20core (80HT)    00m21s          1517.036 CPU-secs  (Ubuntu 18.04, Linux 4.15)
+Intel Xeon Gold 6140		[jelly]		   2.30  2x18core (72HT)    00m22s          1432.344 CPU-secs  (Debian 9.0, Linux grml 4.9.0-1-grml-amd64)
+Intel Xeon Gold 6132            [hbogner]          2.60  2x14core (56HT)    00m22s          1177.860 CPU-secs  (Linux 4.15, Ubuntu 18.04)
+Intel Xeon E5-2698v3            [Mmike]            2.30  2x16core (64HT)    00m27s          1630.274 CPU-secs  (Linux 4.15, Ubuntu 18.04)
+Intel Xeon E5-2690v4            [jelly]            2.6G  2x14core (56HT)    00m28s          1454.656 CPU-secs  (Debian 4.1.7-1+grml.1)
+AMD EPYC 7302P                  [hbogner]          3.0G  2x16core (32HT)    00m31s           969.839 CPU-secs  (Linux 4.15, Ubuntu 18.04)
+Intel Xeon E5-2690V3		[jelly]		   2.6G  2x12core (48hT)    00m34s          1518.808 CPU-secs  (Debian 4.1.7-1+grml.1)
+Intel Xeon E5-2683V3    	[Mmike]            2.0G  2x14core (56HT)    00m34s          1751.776 CPU-secs
+AMD Ryzen Threadripper 1950X    [lathiat]          2.2G    16core (noHT)    00m34s          1053.103 CPU-secs  (Linux 4.8, Ubuntu 16.04)
+Intel Xeon E5-2697V2		[oburt]		   2.7G	 2x12core (48HT)    00m35s          1546.941 CPU-secs  (Linux 3.10, CentOS 7)
+<!-- <del>
+Intel Xeon E5-2690V3            [jelly]            2.6G  2x12core (24)      00m38s           839.312 CPU-secs  (Debian 4.1.7-1+grml.1) NOTE: HT disabled in BIOS
+</del> -->
+IBM POWER8 (PowerNV 8247-22L)   [Mmike]            2.0G  160 units (??)     00m40s          4726,437 CPU-secs  (Linux 4.4.0 ppc64le)
+Intel Xeon Gold 5120            [hbogner]          2.4G  2x14core (56HT)    00m41s          2138,407 CPU-secs  (Linux 3.16, Debian 7)
+AMD EPYC 7351P			[hbogner]	   2.4G    16core (32HT)    00m42s          1293,781 cpu-secs  (Linux 3.16, Debian 7)
+Intel Xeon Gold 6146		[hbogner]	   3.0G    12core (24HT)    00m49s          1167.716 CPU-sec   (Linux 4.9, Debian 9)
+Intel Xeon E5-2630V3            [rut]              2.4G   2x8core (16)      0m56s           1726.732 CPU-secs  (FreeBSD13)
+AMD Ryzen 7 2700X               [sglumac]          3.7G     8core (16TH)    0m56s            890.796 CPU-secs  (Linux 4.18, Ubuntu 18.04)
+AMD Ryzen 7 1700X		[lathiat]	   3.4G     8core (16)      01m08s          1077.051 CPU-secs  (Linux 4.4, Ubuntu 16.04)
+AMD Ryzen 7 2700X               [BozonProtonsky]   3.7G     8core (16HT)    01m13s                             (Windows 10, ... )
+AMD Ryzen 5 2600                [BottkaSmottka]    3.4      6core (12HT)    01m26s          1016.641 CPU-secs  (Linux 5.3, Ubuntu 19.10)
+Intel Xeon E5-2650      	[Mmike]            2.3G    10core (20HT)    01m27s          1679.554 CPU-secs 
+Intel i5-8600K			[matija]           3.0G     6core (noHT)    01m29s           532.078 CPU-secs  (Debian 10, Linux 4.19)
+AMD Ryzen 5 1600 		[CrazyLemon]       3.2G     6core (12)      01m32s          1092.154 CPU-secs  (Linux 4.10, Ubuntu 17.04)
+Intel i7 8700K                  [Minimal_-_T]    ] 3.7G     6core (12HT)    01m33s          1056.901 CPU-secs  (Windows 10, Build 1909)
+Intel Xeon Silver 4110          [jelly]            2.1G     8core (16HT)    01m40s          1581.216 CPU-secs  (Debian 9.0, Linux grml 4.9.0-1-grml-amd64)
+AMD Ryzen 5 2600                [BotoSmoto]        3.6G     6core (12HT)    01m43s          1204.088 CPU-secs  (Windows 10, Build 17763)
+Intel i7-8750H			[darek]	           2.2G     6core (12HT)    01m45s          1250.800 CPU-secs  (Linux 5.4, Ubuntu 20.04)          
+Intel i7 7700HQ                 [flirek]           2.8G     4core (8HT)     01m56s           928.007 CPU-secs  (Gentoo 2.6, Linux 5.0.9) 
+Intel i7 6700KJ			[darek]		   4.0G     4core (8HT)	    02m01s	     968.098 CPU-secs  (Linux 4.8.0, Ubuntu 17.04)
+Amd Ryzen 5 2400G               [Silverspace]      3.6G     4core (8HT)     02m01s           960.844 CPU-secs  (Linux 4.15, Ubuntu 18.04)
+Intel i7 7700                   [obrut]            3.6G     4core (8HT)     02m09s          1023,958 CPU-secs  (Linux 4.8, UbuntuMate 16.10)
+Intel i7 4790K          	[Mmike]            4.0G     4core (8HT)     02m11s          1006.096 CPU-secs
+Intel i7 6820HQ			[Mmike]		   2.7G     4core (8HT)     02m26s          1170.315 CPU-sewcs (Linux 4.15, LinuxMint 18.04)
+AMD FX(tm)-8350                 [freyes]           4.0G     8core (noHT)    02m36s          1243.384 CPU-secs  (Linux 4.4.0, Ubuntu 16.04)
+AMD Ryzen 3 2200G		[obrut]		   3.5G     4core (8HT)     02m38s           634.496 CPU-secs  (Linux 4.18, Ubuntu 18.04)
+Intel i7 6770HQ	(NUC6i7KYK)	[allixsenos]       2.6G     4core (8HT)     02m40s          1263.680 CPU-secs  (Linux 4.4.0, Ubuntu 16.04)
+Intel i7 4770K                  [hbogner]          3.5G     4core (8HT)     02m41s          1284.491 CPU-secs  (Linux 3.19)
+AMD FX(tm)-8350                 [jsosic]           4.0G     8core (noHT)    02m42s          1259,949 CPU-secs  (Linux 3.10, CentOS 7.2)
+AMD FX(tm)-8350			[vileni]           4.0G     8core (noHT)    02m49s          1279.204 CPU-secs  (Linux 3.16)
+Intel Xeon E5-2620      	[Mmike]            2.0G     6core (12HT)    03m07s          2227.640 CPU-secs
+Intel i7-4702HQ			[darek]		   2.2G     4core (8HT)     03m08s          1487.289 CPU-secs  (Linux 5.4, Ubuntu 20.04)
+Intel i7 4750HQ         	[dodobas]          2.0G     4core (8HT)     03m09s          1503.206 CPU-secs  (arch, Linux 4.2)
+Intel Xeon E3-1220 V2           [matija]           3.1G     4core (noHT)    03m36s           842.339 CPU-secs  (Ubuntu 18.04, Linux 4.15)
+Intel i5 3470                   [hbogner]          3.2G     4core (noHT)    03m45s           897.468 CPU-secs  
+Intel i5 3470           	[vileni]           3.2G     4core (noHT)    03m49s           900.142 CPU-secs
+Intel Xeon E5405		[hbogner]          2.0G   2x4core (noHT)    03m51s          1830.462 CPU-secs 
+Intel i5 3470           	[BotoSmoto]        3.2G     4core (noHT)    04m04s           881.499 CPU-secs  (Ubuntu 15.10, Linux4.2)
+Intel Atom C3758		[obrut/hrvoje]     2.2G     8core (noHT)    04m08s          1976.714 CPU-secs  (Debian 9.8, Linux4.8)
+Intel i7 2670QM                 [Mmike]            2.2G     4core (8HT)     04m12s          2010.155 CPU-secs
+Intel Pentium G4560             [obrut]            3.5G     2core (4HT)     04m42s          1130.619 CPU-secs  (Ubuntu 16.10, Linux 4.8)
+Intel i7 7500U                  [shaner]           2.7G     2core (4HT)     04m48s          1153.794 CPU-secs  (Ubuntu 18.04, Linux 4.15)
+Intel Pentium Silver J5005      [darek]            1.5G     4core (noHT)    04m52s          1176.165 CPU-secs  (Ubuntu 18.04, Linux 4.15)
+AMD Athlon 200GE                [Mmike]            3.2G     2core (4HT)     04m52s          1169.133 CPU-secs  (Ubuntu 16.04, Linux 4.15)
+Intel i5-10210U (T14s)		[vileni]	   1.6G     4core (8HT)     05m10s          2464.643 CPU-secs  (Ubuntu 20.04, Linux 5.4)
+Intel i7-6600U                  [Mmike]            2.6G     2core (4HT)     05m34s          1338.234 CPU-secs  (Ubuntu 20.04, Linud 5.4) (Thinkpad X260)
+AMD A6-3650             	[CrazyLemon]       2.6G     4core (noHT)    05m59s          1426.711 CPU-secs  (Ubuntu 14.04, Linux 3.19)
+Intel i7 7560U                  [darek]            2.4G     2core (4HT)     06m03s          1446.446 CPU-secs  (Ubuntu 17.04, Linux 4.10)
+Intel Atom C2750                [darek]            2.4G     8core (noHT)    06m30s	    3099.148 CPU-secs  (Ubuntu 16.04, Linux 4.4)
+Intel Xeon 5140                 [hbogner]          2.3G   2x2core (noHT)    06m45s          1618.631 CPU-secs  (Ubuntu 14.04, Linux 3.16)
+Intel Atom C2758        	[vileni]	   2.4G	    8core (noHT)    06m54s          3290.792 CPU-secs
+Intel i5 4200M                  [rut]              2.5G     2core (4HT)     06m55s          1503.776 CPU-secs  (FreeBSD12)
+Intel i7 2640M                  [Mmike]            2.8G     2core (4HT)     07m19s          1755.484 CPU-secs
+Intel i5 2520M                  [Mmike]            2.5G     2core (4TH)     07m34s          1814.931 CPU-secs
+AMD AthlonII X4 600e    	[Mmike]            2.2G     4core (noHT)    07m38s          1770.935 CPU-secs
+AMD AthlonII X4 600e            [Mmike]            2.2G     4core (noHT)    08m57s          1903.642 CPU-secs  (Ubuntu 14.04, Linux 4.4)
+Intel i3 6006U                  [Mmike]            2.0G     2core (4HT)     08m02s	    1920.342 CPU-secs  (Ubuntu 17.04, Linux 4.10)
+Intel i5 4210U                  [Mmike]            1.7G     2core (4HT)     08m10s           493.351 CPU-secs  (Ubuntu 14.04, Linux 3.13)
+Intel i5 M560                   [nix]              2.67G    2core (4HT)     09m14s          2216.368 CPU-secs  (Ubuntu 14.04, Linux 3.16)
+Intel Celeron J4005 (NUC7JYB)   [mmike]            2.0G     2core (noHT)    09m38s          1155.808 CPU-secs  (Ubuntu 18.04, Linux 4.15)
+AMD Athlon 5350         	[vileni]           2.05G    4core (noHT)    10m00s          2399.695 CPU-secs  (Linux 3.16)
+AMD Athlon 5350         	[SilverSpace]      2.05G    4core (noHT)    11m12s          2617.197 CPU-secs  (Ubuntu 15.10, Linux 4.2)
+Intel Core2Duo T7100    	[Mmike]            1.8G     2core (noHT)    17m35s          2094.762 CPU-secs
+Intel Core2Duo T7500            [hbogner]          2.2G     2core (noHT)    19m14s          2290.190 CPU-secs
+ARM Cortex A53 RK3328		[matija]	            4core           26m49s	    6410.064 CPU-secs  (Debian 9.3, Linux 4.4.77)
+ARM PJ4Bv7 (scaleway)   	[Mmike]                     4core (noHT)    39m04s          9364.480 CPU-secs  (Linux3.2/armv7l)
+Intel Atom N270			[darek]		   1.6G     1core (2HT)    112m21s            25.227 CPU-secs  (Ubuntu 18.04, Linux 4.15)
+ARMv6 ARM1176JZF-S Rpi B+       [SilverSpace]      0.8G     1core (noHT)   493m19s         29135.286 CPU-secs  (Linux4.1/armv6l)
+</pre>
+</body>
+</html>
