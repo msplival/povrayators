@@ -1,0 +1,5 @@
+cpu,who,frequency_ghz,cores,threads,elapsed_seconds,cpu_seconds,os
+Intel Xeon Gold 5218R,hbogner,2.10,40,80,21,1517.036,"Ubuntu 18.04, Linux 4.15"
+Intel Xeon Gold 6140,jelly,2.30,36,72,22,1432.344,"Debian 9.0, Linux grml 4.9.0-1-grml-amd64"
+Intel Core i9-9900K,apex,3.60,8,16,77,1235.295,"Ubuntu 20.04, Linux 5.4"
+
