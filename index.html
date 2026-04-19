@@ -28,6 +28,8 @@
       <th>Elapsed (s)</th>
       <th>CPU-secs</th>
       <th>OS</th>
+      <th>Benchmark run</th>
+      <th>Benchmark submitted</th>
     </tr>
   </thead>
   <tbody>
@@ -42,11 +44,11 @@
       <td class="num">{{ r.elapsed_seconds }}</td>
       <td class="num">{{ r.cpu_seconds }}</td>
       <td>{{ r.os }}</td>
+      <td>{{ r.benchmark_run_date }}</td>
+      <td>{{ r.benchmark_submitted_date }}</td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
 
-</b
 ::contentReference[oaicite:0]{index=0}
-
