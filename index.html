@@ -15,37 +15,25 @@
 </head>
 <body>
 
-<h1>POV-Ray benchmark results</h1>
+<h1>Local Jekyl Template Test</h1>
 
 <table>
   <thead>
     <tr>
-      <th>CPU</th>
-      <th>Who</th>
-      <th>GHz</th>
-      <th>Cores</th>
-      <th>Threads</th>
-      <th>Elapsed (s)</th>
-      <th>CPU-secs</th>
-      <th>OS</th>
-      <th>Benchmark run</th>
-      <th>Benchmark submitted</th>
+      <th>Name</th>
+      <th>Last Name</th>
+      <th>Height</th>
+      <th>Date of birth</th>
     </tr>
   </thead>
   <tbody>
-    {% assign runs = site.data.benchmark-runs | sort_natural: "elapsed_seconds" %}
+    {% assign runs = site.data.people | sort_natural: "last" %}
     {% for r in runs %}
     <tr>
-      <td>{{ r.cpu }}</td>
-      <td>{{ r.who }}</td>
-      <td class="num">{{ r.frequency_ghz }}</td>
-      <td class="num">{{ r.cores }}</td>
-      <td class="num">{{ r.threads }}</td>
-      <td class="num">{{ r.elapsed_seconds }}</td>
-      <td class="num">{{ r.cpu_seconds }}</td>
-      <td>{{ r.os }}</td>
-      <td>{{ r.benchmark_run_date }}</td>
-      <td>{{ r.benchmark_submitted_date }}</td>
+      <td>{{ r.name }}</td>
+      <td>{{ r.last }}</td>
+      <td class="num">{{ r.height }}</td>
+      <td class="num">{{ r.date_of_birth }}</td>
     </tr>
     {% endfor %}
   </tbody>
