@@ -27,7 +27,7 @@
     </tr>
   </thead>
   <tbody>
-    {% assign runs = site.data.people | sort_natural: "height" %}
+    {% assign runs = site.data.people | sort: "height" %}
     {% for r in runs %}
     <tr>
       <td>{{ r.name }}</td>
