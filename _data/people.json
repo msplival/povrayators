@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Mario",
+    "last": "Splivalo",
+    "height": 186,
+    "dob": "1976-12-10"
+  },
+  {
+    "name": "Maja",
+    "last": "Stankovic",
+    "height": 171,
+    "dob": "1979-02-05"
+  },
+  {
+    "name": "Juraj",
+    "last": "Jonko",
+    "height": 91,
+    "dob": "1981-05-11"
+  },
+  {
+    "name": "Ivan",
+    "last": "Honk",
+    "height": 13,
+    "dob": "2026-04-01"
+  }
+]
