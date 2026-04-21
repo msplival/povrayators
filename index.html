@@ -33,7 +33,7 @@
     </tr>
   </thead>
   <tbody>
-    {% assign runs = site.data.benchmark-runs | sort_natural: "elapsed_seconds" %}
+    {% assign runs = site.data.benchmark-runs | sort: "elapsed_seconds" %}
     {% for r in runs %}
     <tr>
       <td>{{ r.cpu }}</td>
