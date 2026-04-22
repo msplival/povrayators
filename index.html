@@ -49,11 +49,11 @@
       {% assign m_str = m | prepend: "0" | slice: -2, 2 %}
       <td class="num">
       {% if h > 0 %}
-        {{ h }}h{{ m_str }}m{{ sec_str }}s
+        {{ h }} h {{ m_str }} m {{ sec_str }} s
       {% elsif m > 0 %}
-        {{ m }}m{{ sec_str }}s
+        {{ m }} m {{ sec_str }} s
       {% else %}
-        {{ sec }}s
+        {{ sec }} s
       {% endif %}
     </td>
       <td class="num">{{ r.cpu_seconds }}</td>
